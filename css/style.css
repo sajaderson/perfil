@@ -1,0 +1,25 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 250px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    background: #0c0c14;
+
+}
+
+#circle-top {
+    background: #2fbf71;
+    width: 310px;
+    height: 310px;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    top: -180px;
+    left: -50px;
+}
