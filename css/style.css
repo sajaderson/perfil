@@ -91,6 +91,11 @@ a#contact-link {
   padding: 12px 0;
 }
 
+#nav-social a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 #nav-social ion-icon {
   padding: 0 6px;
 }
@@ -140,10 +145,21 @@ section#home p {
   text-align: justify;
 }
 
+section#home a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+section#home #button:hover {
+  background: var(--text-color);
+  box-shadow: 3px 3px 0px var(--details);
+  color: var(--details);
+}
+
 section#home #button {
   width: 160px;
   background: var(--details);
-  box-shadow: 3px 3px 3px white;
+  box-shadow: 3px 3px 0px white;
   padding: 10px 20px;
   margin-top: 25px;
   text-align: center;
