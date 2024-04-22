@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --text-color: #fff;
   --border-color: rgba(255, 255, 255, 0.3);
@@ -171,4 +175,5 @@ section#about {
   display: flex;
   flex-wrap: wrap;
   padding-top: 100px;
+  height: 100vh;
 }
