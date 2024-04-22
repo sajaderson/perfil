@@ -3,27 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout Flexível</title>
+  <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <aside class="header">
-      <!-- Conteúdo do cabeçalho -->
-    </aside>
-    <main class="main">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ex facere nobis dolorum temporibus pariatur provident eligendi, est modi necessitatibus voluptates porro natus fugiat reiciendis laboriosam quam laudantium itaque non.
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, non perferendis praesentium nostrum eveniet assumenda veritatis delectus mollitia, quaerat amet voluptatum, aliquid maiores vel fugit pariatur? Dicta totam culpa aperiam?
-      Amet repellat praesentium tempore sed sit enim facere ullam, consectetur id porro quis modi deleniti. Aperiam cupiditate repellendus est! Esse ut debitis perspiciatis expedita labore delectus amet facilis unde minima?
-      Ut harum fugit reprehenderit, ipsum doloribus mollitia eligendi veniam voluptatum quibusdam facere eum culpa, natus veritatis est et iusto, provident quaerat corporis laborum ex placeat debitis assumenda nemo ducimus? Voluptate?
-      Eaque molestiae amet repudiandae soluta eligendi dolorum tenetur repellat delectus cupiditate voluptate rerum laudantium illum, dicta deleniti quo et nesciunt, consequatur in veritatis autem qui quos provident similique! At, libero.
-      Fugit excepturi nobis soluta, modi consequuntur ipsa sapiente, accusantium ratione asperiores dicta delectus voluptatibus magni cum quam quas esse eligendi nihil labore perspiciatis adipisci! Dolores necessitatibus iure iusto porro minima.
-      Itaque ex unde voluptatum pariatur id aut neque qui ullam sapiente commodi minus fugiat magnam facere nam, eos delectus accusamus quam est maxime nostrum cum consequatur doloribus obcaecati! Quasi, quisquam!
-      Vero illo iusto at? Ad dolorum quam nisi esse, repudiandae, doloribus molestias amet ducimus officiis earum odio blanditiis alias, inventore qui laudantium expedita illo assumenda architecto. Nesciunt eos distinctio obcaecati.
-      Similique assumenda minima aperiam, odit maiores voluptate distinctio explicabo consequatur sint nemo blanditiis aspernatur architecto cupiditate illum ea unde iusto eius, nam omnis hic magni sed officia quam. Soluta, voluptas.
-      Officia dolores, quo soluta animi deserunt fugit! Voluptatem praesentium ullam, cum consequuntur eveniet voluptatum corporis id laudantium officia minima quae deleniti quaerat suscipit tenetur libero. Soluta corrupti rem magni non?
-      Quo possimus dolor delectus aspernatur iure blanditiis temporibus voluptas quas modi animi, quaerat nobis! Ipsa, est ut dolores labore aperiam necessitatibus animi nihil, sequi veniam voluptate provident alias obcaecati sint?
-    </main>
-  </div>
+  <header>
+    <div id="circle"></div>
+    <div id="profile">
+      <div id="profile-photo"></div>
+      <div id="profile-name">JADERSON</div>
+    </div>
+    <nav id="nav-menu">
+      <a href="#home" id="home-link"><ion-icon name="home-outline"></ion-icon> Inicio</a>
+      <a href="#about" id="about-link"><ion-icon name="person-outline"></ion-icon> Sobre Mim</a>
+      <a href="#services" id="services-link"><ion-icon name="build-outline"></ion-icon> Services</a>
+      <a href="#portfolio" id="portfolio-link"><ion-icon name="briefcase-outline"></ion-icon> Portfólio</a>
+      <a href="#blogs" id="blogs-link"><ion-icon name="reader-outline"></ion-icon> Blogs</a>
+      <a href="#contact" id="contact-link"><ion-icon name="call-outline"></ion-icon> Contato</a>
+    </nav>
+    <nav id="nav-social">
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-linkedin"></ion-icon>
+      <ion-icon name="logo-pinterest"></ion-icon>
+    </nav>
+  </header>
+  <main>
+    <div id="circle-main"></div>
+    <section id="home">        
+      <div>
+        <h2>Olá, Eu sou </h2>
+        <h1>Jaderson Araujo</h1>
+        <p>Eu projeto e desenvolvo serviços para clientes de todos os tipos, focando especialmente em criar sites modernos e estilosos, serviços web e lojas online.</p>
+        <div id="button">Download CV</div>
+      </div>
+      <div>               
+        <div id="photo"></div>
+      </div>      
+    </section>
+    <section id="about">
+      <h2>Sobre Mim</h2>
+    </section>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

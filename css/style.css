@@ -1,39 +1,174 @@
-/* Estilos globais */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* ##### Estilos globais ##### */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #fff;
+  --border-color: rgba(255, 255, 255, 0.3);
+  --background-header: #0c0c14;
+  --background-main: #10101a;
+  --details: #2fbf71;
+}
+
+/* ##### Cabeçalho lateral fixo ##### */
+header {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: var(--background-header);
+  border: 1pxs solid white;
+  overflow: hidden;
+  color: var(--text-color);
+  font-family: "Rubik", sans-serif;
+}
+
+#circle {
+  background: var(--details);
+  width: 310px;
+  height: 310px;
+  position: absolute;
+  border-radius: 50%;
+  top: -180px;
+  left: -50px;
+  z-index: -1;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 65px 0 0;
+}
+
+#profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-image: url(../imagens/profile-photo.jpg);
+  background-size: cover;
+}
+
+#profile-name {
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+#nav-menu {
+  margin: 45px 0;
+}
   
-  html, body {
-    height: 100%;
-    overflow: hidden; /* Desabilita a rolagem no body */
-  }
-  
-  /* Container principal */
-  .container {
-    display: flex;
-    height: 100%;
-  }
-  
-  /* Cabeçalho lateral fixo */
-  .header {
-    position: fixed; /* Fixa o cabeçalho na lateral */
-    width: 350px;
-    height: 100%;
-    background: #333;
-    color: white;
-    padding: 1rem;
-    overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a tela */
-  }
-  
-  /* Conteúdo principal */
-  .main {
-    margin-left: 350px; /* Desloca o main para a direita, ao lado do header */
-    flex-grow: 1;
-    background: #f4f4f4;
-    padding: 1rem;
-    overflow-y: auto; /* Habilita a rolagem no conteúdo principal */
-    height: 100vh; /* Altura fixa para permitir rolagem */
-  }
-  
+#nav-menu a {
+  display: block;
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+a#contact-link {
+  border-bottom: none;
+}
+
+#nav-social {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 250px;
+  bottom: 0;
+  padding: 12px 0;
+}
+
+#nav-social ion-icon {
+  padding: 0 6px;
+}
+
+/* ##### Conteúdo principal ##### */
+main {
+  position: relative;
+  margin-left: 250px;
+  background: var(--background-main);
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  color: var(--text-color);
+  font-family: "Rubik", sans-serif;
+}
+
+section#home {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+section#home>div {
+  flex: 50%;
+  margin: auto 0;
+  z-index: 2;
+}
+section#home h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+section#home h2 {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+section#home p {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+section#home #button {
+  width: 160px;
+  background: var(--details);
+  box-shadow: 3px 3px 3px white;
+  padding: 10px 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+section#home #photo{
+  height: 540px;
+  width: 540px;
+  border-radius: 50%;
+  background-image: url(../imagens/profile-photo.jpg);
+  background-size: cover;
+  margin: 0 auto;
+  border: 2px solid white;
+}
+
+#circle-main {
+  position: absolute;
+  right: -146px;
+  top: -146px;
+  width: 730px;
+  height: 730px;
+  border-radius: 50%;
+  background: var(--details);
+}
+
+section#about {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
