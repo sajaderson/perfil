@@ -78,6 +78,10 @@ header {
   letter-spacing: 3px;
 }
 
+#nav-menu a:hover {
+  color: var(--details);
+}
+
 a#contact-link {
   border-bottom: none;
 }
