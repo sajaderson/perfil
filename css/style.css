@@ -96,12 +96,23 @@ a#contact-link {
 }
 
 #nav-social a {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: var(--text-color);
+  border-radius: 50%;
+  transition: background 0.2s;
+  padding: 8px;
+}
+
+#nav-social a:hover {
+  background: var(--details);
 }
 
 #nav-social ion-icon {
-  padding: 0 6px;
+  /* padding: 0 6px; */
 }
 
 /* ##### Conteúdo principal ##### */
