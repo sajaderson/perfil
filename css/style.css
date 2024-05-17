@@ -29,9 +29,15 @@ html {
   color: var(--text-color);
   font-family: "Rubik", sans-serif;
   z-index: 3;
+  display: none;
+}
+
+#headerH div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #botao-menu {
@@ -100,7 +106,7 @@ label[for="botao-menu"] {
 }
 
 #nav-menu a {
-  display: block;
+  display: flex;
   color: var(--text-color);
   text-decoration: none;
   text-transform: uppercase;
@@ -112,10 +118,15 @@ label[for="botao-menu"] {
 
 #nav-menu a:hover {
   color: var(--details);
+  box-shadow: inset 3px 0 0 var(--details);
 }
 
 a#contact-link {
   border-bottom: none;
+}
+
+#nav-menu ion-icon {
+  margin-right: 10px;
 }
 
 #nav-social {
@@ -142,10 +153,6 @@ a#contact-link {
   background: var(--details);
 }
 
-#nav-social ion-icon {
-  /* padding: 0 6px; */
-}
-
 /* ##### Conteúdo principal ##### */
 main {
   position: relative;
@@ -158,32 +165,20 @@ main {
   font-family: "Rubik", sans-serif;
 }
 
-section#home {
-  width: 90%;
+section {
+  height: auto;
+  min-height: 100vh;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  height: 100vh;
+  width: 90%;
+  /* border: 1px solid red; */
 }
 
-section#home > div {
-  flex: 50%;
-  margin: auto 0;
-  z-index: 2;
-}
-section#home h1 {
-  font-size: 65px;
-  margin-bottom: 20px;
+section a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-section#home h2 {
-  font-size: 25px;
-  font-weight: normal;
-  margin-bottom: 20px;
-}
-
-section#home p {
+section p {
   font-size: 18px;
   font-weight: lighter;
   margin-bottom: 20px;
@@ -191,18 +186,13 @@ section#home p {
   text-align: justify;
 }
 
-section#home a {
-  text-decoration: none;
-  color: var(--text-color);
+section h2 {
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 30px;
 }
 
-section#home #button:hover {
-  background: var(--text-color);
-  box-shadow: 3px 3px 0px var(--details);
-  color: var(--details);
-}
-
-section#home #button {
+section .button {
   width: 160px;
   background: var(--details);
   box-shadow: 3px 3px 0px white;
@@ -211,14 +201,133 @@ section#home #button {
   text-align: center;
 }
 
-section#home #photo {
-  height: 540px;
-  width: 540px;
+section .button:hover {
+  background: var(--text-color);
+  box-shadow: 3px 3px 0px var(--details);
+  color: var(--details);
+}
+
+section#home {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section#home>div {
+  width: 49%;
+  min-width: 300px;
+}
+
+section#home h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+section#home img {
+  width: 100%;
   border-radius: 50%;
-  background-image: url(../imagens/profile-photo.jpg);
-  background-size: cover;
-  margin: 0 auto;
   border: 2px solid white;
+}
+
+section#about {
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section#about>div {
+  width: 49%;
+  min-width: 300px;
+}
+
+#aboutGridPhoto {
+  display: flex;
+  gap: 10px;
+}
+
+#aboutGridPhoto  > div {
+  width: 50%;
+}
+
+#column2 {
+  padding-top: 50px;
+}
+
+#aboutGridPhoto #photo1, #photo2, #photo3, #photo4 {
+  margin-bottom: 10px;
+}
+
+.photoShort {
+}
+
+.photoLong {
+}
+
+#aboutGridPhoto img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+section#about h2 {
+  padding-top: 50px;
+  font-weight: bolder;
+}
+
+section#about #aboutDescription > p {
+  margin-bottom: 20px;
+} 
+
+#aboutFooter{
+  display: flex;
+  gap: 10px;
+}
+
+.aboutQuantidade {
+  display: flex;
+  width: 160px;
+}
+
+.aboutQuantidade p {
+  margin-bottom: 0;
+  
+}
+.aboutQuantidade p:first-child {
+  font-size: 50px;
+  font-weight: bolder;
+}
+.aboutQuantidade p:last-child {
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+#aboutFooter a {
+  display: flex;
+  width: 100%;
+}
+
+#servicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#servicesGrid .card{
+  width: 49%;
+  padding: 50px;
+  background: var(--background-header);
+  display: flex;
+}
+#servicesGrid .card:hover {
+  background: var(--details);
+}
+
+.card img {
+  width: 50px;
+  color: red;
 }
 
 #circle-main {
@@ -231,20 +340,16 @@ section#home #photo {
   background: var(--details);
 }
 
-section#about {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  height: 100vh;
-}
-
 @media (max-width: 1200px) {
   #headerV {
     margin-left: -250px;
     z-index: 3;
     transition: all .4s;
+    top: 0;
+  }
+
+  #headerH {
+    display: flex;
   }
 
   main {
@@ -259,7 +364,28 @@ section#about {
     display: flex;
   }
 
-  #botao-menu:checked ~ #headerV {
-    margin-left: 250px;
+  #botao-menu:checked~#headerV {
+    margin-left: 0px;
+    top: 0;
+  }
+}
+
+@media (max-width: 940px) {
+  section#home #homeDescription {
+    width: 100%;
+  }
+
+  section#home #photo {
+    margin: 50px auto 0;
+    width: 50%;
+  }
+
+  section#about #aboutDescription {
+    width: 100%;
+  }
+
+  section#about #aboutGridPhoto {
+    margin: 50px 0 auto;
+    width: 100%;
   }
 }

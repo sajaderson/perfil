@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
+
+  <input type="checkbox" id="botao-menu">
   <header id="headerH">
-    <h1>Jaderson</h1>
-    <input type="checkbox" id="botao-menu">
-    <label for="botao-menu">&#9776;</label>
+    <div>
+      <h1>Jaderson</h1>
+      <label for="botao-menu">&#9776;</label>
+    </div>
   </header>
   <header id="headerV">
     <div id="circle"></div>
@@ -31,41 +36,132 @@
       <a href="https://www.facebook.com/" target="_blank">
         <ion-icon name="logo-facebook"></ion-icon>
       </a>
-      <a href="https://twitter.com"  target="_blank">
+      <a href="https://twitter.com" target="_blank">
         <ion-icon name="logo-twitter"></ion-icon>
       </a>
-      <a href="https://www.instagram.com/"  target="_blank">
+      <a href="https://www.instagram.com/" target="_blank">
         <ion-icon name="logo-instagram"></ion-icon>
       </a>
-      <a href="https://www.linkedin.com/"  target="_blank">
+      <a href="https://www.linkedin.com/" target="_blank">
         <ion-icon name="logo-linkedin"></ion-icon>
       </a>
-      <a href="https://br.pinterest.com/"  target="_blank">
+      <a href="https://br.pinterest.com/" target="_blank">
         <ion-icon name="logo-pinterest"></ion-icon>
       </a>
     </nav>
   </header>
   <main>
-    
-    <section id="home">        
-      <div>
+
+    <section id="home">
+      <div id="homeDescription">
         <h2>Olá, Eu sou </h2>
         <h1>Jaderson Araujo</h1>
-        <p>Eu projeto e desenvolvo serviços para clientes de todos os tipos, focando especialmente em criar sites modernos e estilosos, serviços web e lojas online.</p>
+        <p>Eu projeto e desenvolvo serviços para clientes de todos os tipos, focando especialmente em criar sites
+          modernos e estilosos, serviços web e lojas online.</p>
         <a download="Currículo - Jaderson Araujo" href="docs/RelatorioAcaoEducacional-23.pdf">
-          <div id="button">Download CV</div>
+          <div class="button">Download CV</div>
         </a>
       </div>
-      <div id="circle-main"></div>
-      <div>               
-        <div id="photo"></div>
-      </div>      
+      <div id="photo"><img src="imagens/profile-photo.jpg" alt=""></div>
     </section>
+
     <section id="about">
-      <h2>Sobre Mim</h2>
+
+      <div id="aboutGridPhoto">
+
+        <div id="column1">
+          <div id="photo1" class="photoShort">
+            <img src="imagens/profile-photo.jpg" alt="">
+          </div>
+          <div id="photo2" class="photoLong">
+            <img src="imagens/profile-photo.jpg" alt="">
+          </div>
+        </div>
+
+        <div id="column2">
+          <div id="photo3" class="photoLong">
+            <img src="imagens/profile-photo.jpg" alt="">
+          </div>
+          <div id="photo4" class="photoShort">
+            <img src="imagens/profile-photo.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="aboutDescription">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou desenvolvedor Front-end Freelancer com mais de 3 anos de experiência.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo quo culpa ex molestiae delectus atque
+          ducimus cumque deserunt quod, molestias veritatis mollitia aliquid eveniet vitae quasi! Laudantium, ad nisi.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus harum, omnis neque quam sint ipsa possimus et distinctio in placeat ex dolore rerum esse! Deleniti, nisi nihil! Corrupti, cum dicta?
+        </p>
+
+        <div id="aboutFooter">
+          <div>
+            <div class="aboutQuantidade">
+              <p>5K</p>
+              <p>Projetos Completos</p>
+            </div>
+            <a href="#contact">
+              <div class="button">Contato</div>
+            </a>
+          </div>
+
+          <div>
+            <div class="aboutQuantidade">
+              <p>3K</p>
+              <p>Clientes Satisfeitos</p>
+            </div>
+            <a class="Btn" href="#portfolio">
+              <div class="button">Portfólio</div>
+            </a>
+          </div>
+        </div>
+
+      </div>
     </section>
+
+    <section id="services">
+      <h2>Serviços</h2>
+      <div id="servicesGrid">
+        <div class="card">
+          <img src="" alt="">
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo alias quo perspiciatis corrupti error neque cupiditate placeat numquam. Fugiat quas voluptates ullam dicta aspernatur id accusantium quam, officiis eum.</p>
+        </div>
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo alias quo perspiciatis corrupti error neque cupiditate placeat numquam. Fugiat quas voluptates ullam dicta aspernatur id accusantium quam, officiis eum.</p>
+        </div>
+        <div class="card">
+          
+          <div>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo alias quo perspiciatis corrupti error neque cupiditate placeat numquam. Fugiat quas voluptates ullam dicta aspernatur id accusantium quam, officiis eum.</p>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo alias quo perspiciatis corrupti error neque cupiditate placeat numquam. Fugiat quas voluptates ullam dicta aspernatur id accusantium quam, officiis eum.</p>
+        </div>
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo alias quo perspiciatis corrupti error neque cupiditate placeat numquam. Fugiat quas voluptates ullam dicta aspernatur id accusantium quam, officiis eum.</p>
+        </div>
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illo alias quo perspiciatis corrupti error neque cupiditate placeat numquam. Fugiat quas voluptates ullam dicta aspernatur id accusantium quam, officiis eum.</p>
+        </div>
+      </div>
+    </section>
+
   </main>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>
