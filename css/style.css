@@ -317,7 +317,6 @@ section#about #aboutDescription > p {
 
 #servicesGrid .card{
   width: 49%;
-  padding: 50px;
   background: var(--background-header);
   display: flex;
 }
@@ -325,9 +324,16 @@ section#about #aboutDescription > p {
   background: var(--details);
 }
 
-.card img {
-  width: 50px;
-  color: red;
+.card {
+  border: 1px solid yellow;
+}
+
+.card ion-icon{
+  color: var(--text-color);
+  font-size: 200px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: ;
 }
 
 #circle-main {
