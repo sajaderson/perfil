@@ -340,11 +340,6 @@ section#about #aboutDescription>p {
   margin-right: 10px;
 }
 
-svg {
-  margin: 0;
-  padding: 0;
-}
-
 .card ion-icon {
   font-size: 70px;
 }
@@ -446,7 +441,6 @@ section#portfolio .portfolioCardTitulo {
 }
 
 /* ################ Contato ################## */
-
 section#contato #contatoRow {
   display: flex;
   justify-content: space-between;
@@ -457,7 +451,7 @@ section#contato #contatoRow>div {
   width: 49%;
   min-width: 400px;
   background: var(--background-header);
-  padding: 20px;
+  padding: 40px;
   margin-bottom: 20px;
 }
 
@@ -559,5 +553,6 @@ section#contato textarea {
 
   section#contato #contatoRow>div {
     width: 100%;
+    min-width: 300px;
   }
 }
