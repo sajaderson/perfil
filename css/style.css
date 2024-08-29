@@ -211,7 +211,7 @@ section .button:hover {
   color: var(--details);
 }
 
-section#home {
+section#about {
   display: flex;
   padding-top: 100px;
   justify-content: space-between;
@@ -219,17 +219,17 @@ section#home {
   align-items: center;
 }
 
-section#home>div {
+section#about>div {
   width: 49%;
   min-width: 300px;
 }
 
-section#home h1 {
+section#about h1 {
   font-size: 65px;
   margin-bottom: 20px;
 }
 
-section#home img {
+section#about img {
   width: 100%;
   border-radius: 50%;
   border: 2px solid white;
@@ -448,7 +448,7 @@ section#contato #contatoRow {
 }
 
 section#contato #contatoRow>div {
-  width: 49%;
+  width: 100%;
   min-width: 400px;
   background: var(--background-header);
   padding: 40px;
