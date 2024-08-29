@@ -524,11 +524,11 @@ section#contato textarea {
 }
 
 @media (max-width: 940px) {
-  section#home #homeDescription {
+  section#about #homeDescription {
     width: 100%;
   }
 
-  section#home #photo {
+  section#about #photo {
     margin: 50px auto 0;
     width: 50%;
   }
