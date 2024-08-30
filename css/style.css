@@ -378,6 +378,9 @@ section#portfolio #portfolioGrid {
   position: relative;
   width: 49%;
   min-width: 300px;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
   height: 250px;
   margin-bottom: 100px;
 }
@@ -397,7 +400,7 @@ section#portfolio #portfolioGrid {
 }
 
 .overflow #img-1 {
-  background: url(../imagens/projetoLinkList.png) no-repeat center center/cover;
+  background: url(../imagens/INTRODUÇÃO\ À\ IA\ GENERATIVA\ NA\ PRÁTICA.png) no-repeat center center/cover;
 }
 
 .overflow #img-2 {
@@ -414,16 +417,20 @@ section#portfolio #portfolioGrid {
 
 section#portfolio .portfolioCardTitulo {
   position: absolute;
-  width: 90%;
-  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
   background: var(--background-header);
-  bottom: -30%;
+  bottom: -10%;
   right: 0;
   padding: 20px;
 }
 
 .portfolioCardTitulo p {
   font-size: 12px;
+  margin: 0;
 }
 
 .portfolioCardTitulo p:last-child {
@@ -549,6 +556,7 @@ section#contato textarea {
   .portfolioCardImg {
     width: 100%;
     margin-bottom: 100px;
+    margin: 0 auto;
   }
 
   section#contato #contatoRow>div {
